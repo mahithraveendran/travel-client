@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* color: white; */
+}
+
+/* ant pagination  */
+.ant-pagination-item {
+  border: 1px solid #3a643b !important;
+  background-color: transparent !important;
+}
+
+.ant-pagination-item-active a {
+  color: #fff !important;
+  background-color: #3a643b !important;
+}
+
+/* card  */
+.ant-card {
+  border-radius: 18.28px !important;
+}
+.custom .ant-card-body {
+  padding: 0px !important;
+}
+
+.ant-timeline-item-head {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.ant-menu-title-content {
+  color: #fff !important;
+}
+
+.ant-menu-item-icon {
+  color: #fff !important;
+}
+.ant-menu-item-selected .ant-menu-item-icon {
+  color: #3a643b !important;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  position: relative;
+  transform: rotate(45deg);
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #3a643b;
+  -webkit-mask: radial-gradient(circle 10px at 50% 50%, #0000 94%, #000);
+}
+.loader:after {
+  animation: l6 1s infinite;
+  transform: perspective(300px) translateZ(0px);
+}
+@keyframes l6 {
+  to {
+    transform: perspective(300px) translateZ(150px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .ant-pagination-total-text {
+    display: none !important;
+  }
+}

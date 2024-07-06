@@ -16,7 +16,7 @@ export const uploadAndGetImageUrl = async (img: any) => {
   // });
 
   const { data: response } = await axios.post(
-    `https://api.imgbb.com/1/upload?key=${config.imgKey}`,
+    `https://api.imgbb.com/1/upload?key=0e94becd9a97039b2ee17fa5cc2e1039`,
     body,
     {
       headers: {

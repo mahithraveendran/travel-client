@@ -9,7 +9,7 @@ const TipsAndGuide = () => {
     <div className="pb-20">
       <DrdSection
         name="Tips and Guide"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, debitis!"
+        description="Travel smarter, explore further, experience more"
       />
       <RootContainer>
         <div className="flex items-center justify-between gap-8">

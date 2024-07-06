@@ -12,7 +12,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { ReactNode } from "react";
 
-import dreamLogo from "@/asset/images/home/Dream travel-bg- green.png";
+// import dreamLogo from "@/asset/images/home/Dream travel-bg- green.png";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -56,12 +56,12 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
             <div className="demo-logo-vertical">
               <div className="text-drd-light-yellow text-center py-8 flex items-center justify-center ">
                 <Link href="/">
-                  <Image
+                  {/* <Image
                     src={dreamLogo.src}
                     width={50}
                     height={50}
-                    alt="Dream Destination"
-                  />
+                    alt="Travel Trek"
+                  /> */}
                 </Link>
               </div>
             </div>
@@ -116,12 +116,12 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
           <h1 className="text-white text-2xl font-bold">Travel trek</h1>
           <div>
             <Link href="/">
-              <Image
+              {/* <Image
                 src={dreamLogo.src}
                 width={50}
                 height={50}
                 alt="Dream Destination"
-              />
+              /> */}
             </Link>
           </div>
           <UserProfile className="text-white" />
@@ -138,9 +138,9 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
             {children}
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
+        {/* <Footer style={{ textAlign: "center" }}>
           Dream Destinations ©{new Date().getFullYear()} Created by Dream Team
-        </Footer>
+        </Footer> */}
       </Layout>
     </Layout>
   );

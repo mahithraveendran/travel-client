@@ -35,7 +35,7 @@ const MyPostedTravelPage = () => {
   // generate data from api
   const data =
     travels?.data?.length > 0 &&
-    travels?.data?.map((travel: ITrip, index: number) => {
+    travels?.data?.map((travel: any, index: number) => {
       return {
         key: index + 1,
         budget: travel?.budget,
@@ -44,7 +44,7 @@ const MyPostedTravelPage = () => {
         destination: travel?.destination,
         type: travel?.type,
         id: travel?.id,
-        image: travel?.image,
+        image: travel?.image ,
       };
     });
 
@@ -101,15 +101,20 @@ const MyPostedTravelPage = () => {
       title: "Image",
       dataIndex: "image",
       key: "Image",
-      render: (image: string) => {
+      render: (image: any) => {
         return (
-          <Image
-            src={image}
-            alt="travel"
-            className="w-16 h-16 object-cover rounded-md"
-            width={50}
-            height={50}
-          />
+          <>
+          {
+            image && 
+            <Image
+              src={image}
+              alt="travel"
+              className="w-16 h-16 object-cover rounded-md"
+              width={50}
+              height={50}
+            />
+          }
+          </>
         );
       },
       width: 100,

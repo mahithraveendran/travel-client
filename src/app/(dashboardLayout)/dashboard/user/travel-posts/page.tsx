@@ -41,7 +41,7 @@ const TravelPosts = () => {
   });
 
   // handle post travel
-  const handlePostTravel = async (values: FieldValues) => {
+  const handlePostTravel = async (values: any) => {
     const formattedStartDate = dayjs(values.startDate).format("YYYY-MM-DD");
     const formattedEndDate = dayjs(values.endDate).format("YYYY-MM-DD");
 
@@ -69,7 +69,7 @@ const TravelPosts = () => {
     try {
       const postRes = await postTravel(postTravelData).unwrap();
 
-      console.log(postRes);
+      console.log(postRes,"post response");
 
       if (postRes?.success) {
         toast.success("Travel posted successfully");

@@ -42,12 +42,12 @@ export const userMenuItems = [
 ];
 
 export const commonMenuItems = [
-  {
-    key: "/",
-    icon: React.createElement(UserOutlined),
-    label: "Dashboard",
-    href: "/dashboard",
-  },
+  // {
+  //   key: "/",
+  //   icon: React.createElement(UserOutlined),
+  //   label: "Dashboard",
+  //   href: "/dashboard",
+  // },
   {
     key: "/profile",
     icon: React.createElement(UserOutlined),

@@ -13,7 +13,7 @@ import { appTags } from "./tag";
 // Create a baseQuery with the baseUrl and credentials
 const baseQuery = fetchBaseQuery({
   baseUrl: `${
-    config.apiUrl || "https://server-dream-destinations.vercel.app/api"
+    config.apiUrl || "http://localhost:4000/api"
   }`,
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {

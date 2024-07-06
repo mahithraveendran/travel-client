@@ -18,7 +18,7 @@ const DrdImageUpload = ({
   multiple = 1,
 }: {
   setImages: Dispatch<SetStateAction<any[]>>;
-  multiple?: number;
+  multiple?: any;
 }) => {
   const [previewOpen, setPreviewOpen] = useState(false);
   const [previewImage, setPreviewImage] = useState("");
@@ -26,7 +26,7 @@ const DrdImageUpload = ({
 
   const handlePreview = async (file: UploadFile) => {
     if (!file.url && !file.preview) {
-      file.preview = await getBase64(file.originFileObj as FileType);
+      file.preview = await getBase64(file.originFileObj as any);
     }
 
     setPreviewImage(file.url || (file.preview as string));

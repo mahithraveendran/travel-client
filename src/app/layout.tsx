@@ -8,7 +8,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dream Destinations",
+  title: "Travel Trek",
   description: "Created by Dream Team",
 };
 

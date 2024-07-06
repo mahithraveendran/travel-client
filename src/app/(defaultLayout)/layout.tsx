@@ -7,7 +7,7 @@ const DefaultLayout = ({ children }: { children: ReactNode }) => {
     <>
       <Navbar />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

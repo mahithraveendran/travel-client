@@ -2,7 +2,7 @@
 
 import HeroBg from "@/asset/images/home/hero.jpg";
 import RootContainer from "@/components/shared/RootContainer";
-import { ShareAltOutlined } from "@ant-design/icons";
+import { PlusCircleOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import Link from "next/link";
 import SearchBox from "./SearchBox";
@@ -41,12 +41,12 @@ const HeroSection = () => {
               <Button
                 size="large"
                 className="my-10 w-full md:w-80 font-bold"
-                icon={<ShareAltOutlined />}
+                icon={<PlusCircleOutlined />}
                 style={{
                   fontWeight: "bold",
                 }}
               >
-                Share Your Trip
+                Post Your Trip
               </Button>
             </Link>
 

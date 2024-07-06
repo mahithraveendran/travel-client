@@ -23,11 +23,6 @@ const menuItems = [
     link: "/travels",
   },
   {
-    label: "About Us",
-    key: "about",
-    link: "/about-us",
-  },
-  {
     label: "Plan travel",
     key: "travel",
     link: "/plan-travel",

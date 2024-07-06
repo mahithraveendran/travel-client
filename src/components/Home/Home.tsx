@@ -17,10 +17,10 @@ const HomePage = () => {
       <HeroSection />
       <TravelSection />
       <FeaturedDestination />
-      <CTASection />
-      <TripsAndGuideTwo />
-      <DrdStats />
-      <Footer />
+      {/* <CTASection /> */}
+      {/* <TripsAndGuideTwo /> */}
+      {/* <DrdStats /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

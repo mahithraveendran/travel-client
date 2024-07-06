@@ -160,7 +160,7 @@ const PlanTravel: React.FC = () => {
             <a href={`https://www.google.com/maps/place/${encodeURIComponent(itineraryData?.formattedValues?.destination)}`} target='_blank'>
                 <h2 className="text-xl font-bold mb-6 underline text-indigo-500">Itinerary {itineraryData?.formattedValues?.destination}</h2>
             </a>
-          {itineraryData?.formattedValues?.activities?.map((activity) => (
+          {itineraryData?.formattedValues?.activities?.map((activity: { day: boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<React.AwaitedReactNode> | React.Key | null | undefined; time: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<React.AwaitedReactNode> | null | undefined; description: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (
             <div key={activity.day}>
               <Card title={`${activity.day} `} className="mb-4">
                 <Timeline mode="left">

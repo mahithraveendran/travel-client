@@ -114,6 +114,13 @@ const TravelPosts = () => {
               placeholder="Enter your budget"
               required
             />
+            {/* <DrdInput
+              name="name"
+              label="Name"
+              type="text"
+              placeholder="Enter your budget"
+              required
+            /> */}
             <DrdSelect
               name="type"
               options={travelTypeOptions}
